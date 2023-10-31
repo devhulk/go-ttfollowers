@@ -7,9 +7,10 @@ import (
 	"log"
 	"net/http"
 	"time"
+  "os"
 )
 
-const baseURL = "https://countik.com/api/userinfo"
+var baseURL = os.Getenv("TT_SECRET_URL")
 
 type User struct {
 	SecUID   string    `json:"sec_uid"`
