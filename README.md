@@ -8,3 +8,14 @@ Simple tiktok followers bot.
 4. Mechanism for adding users.
 
 
+## Run Instructions
+
+Create env var in terminal that maps the name of the user config file you want to load.
+```
+export USER_FILE_NAME="userlist.json"
+```
+
+Run project with the following command.
+```
+go run *.go
+```
