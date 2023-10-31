@@ -6,8 +6,8 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 	"time"
-  "os"
 )
 
 var baseURL = os.Getenv("TT_SECRET_URL")
@@ -39,7 +39,7 @@ func (u *User) getUserInfo() *UserData {
 	tries := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
 	for _, v := range tries {
-		time.Sleep(1 * time.Second)
+		time.Sleep(2 * time.Second)
 		request, err := http.NewRequest("GET", baseURL, nil)
 		if err != nil {
 			log.Printf("REQUEST INIT ERROR: %v", err)

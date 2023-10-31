@@ -1,0 +1,30 @@
+{
+	{{$end := false}}
+	{{$len := len .}}
+    "blocks": [
+		{{ range $i, $data := . }}
+		{
+    		"type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "*Follower Count*: {{.FollowerCount}} :tada:\n*Heart Count*: {{.HeartCount}} :confetti_ball:\n*Video Count*: {{.VideoCount}} :clinking_glasses:"
+
+            }, 
+    		"accessory": {
+    			"type": "image",
+    			"image_url": "{{.AvatarThumb}}",
+    			"alt_text": "img"
+    		}
+    	} 
+    	{{if (eq (minus $len $i) 1)}}
+		,{
+			"type": "divider"
+		}
+		{{else}}
+		,{
+			"type": "divider"
+		},
+		{{end}}
+		{{end}}
+    ]
+}

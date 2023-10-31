@@ -24,3 +24,11 @@ Run project with the following command.
 ```
 go run *.go
 ```
+
+## Current Slack Integration Method
+
+Currently, mostly because I wanted to mess with Go templates, I am using a template to create the slack json request.
+
+The template is ```slack.tmpl.json```. Don't edit this file unless absolutely necessary.
+The actual request that is being sent to slack is in ```slack_request.json```. 
+You can copy this generated file into [Block Kit Builder](https://app.slack.com/block-kit-builder) to trouble shoot errors.
