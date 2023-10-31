@@ -1,4 +1,4 @@
-# go-countik
+# go-ttfollowers
 
 Simple tiktok followers bot. 
 
