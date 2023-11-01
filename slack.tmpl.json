@@ -1,5 +1,4 @@
 {
-	{{$end := false}}
 	{{$len := len .}}
     "blocks": [
 		{{ range $i, $data := . }}
