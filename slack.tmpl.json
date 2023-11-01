@@ -4,17 +4,25 @@
     "blocks": [
 		{{ range $i, $data := . }}
 		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "@{{.UserName}} {{.Emoji}}",
+				"emoji": true
+			}
+		},
+		{
     		"type": "section",
-            "text": {
-                "type": "mrkdwn",
-                "text": "*Follower Count*: {{.FollowerCount}} :tada:\n*Heart Count*: {{.HeartCount}} :confetti_ball:\n*Video Count*: {{.VideoCount}} :clinking_glasses:"
-
-            }, 
     		"accessory": {
     			"type": "image",
     			"image_url": "{{.AvatarThumb}}",
     			"alt_text": "img"
-    		}
+    		},
+            "text": {
+                "type": "mrkdwn",
+                "text": ":busts_in_silhouette: *{{.FollowerCount}}*\n:heart: *{{.HeartCount}}*\n:video_camera: *{{.VideoCount}}*"
+
+            } 
     	} 
     	{{if (eq (minus $len $i) 1)}}
 		,{

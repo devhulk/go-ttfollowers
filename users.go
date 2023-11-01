@@ -20,6 +20,8 @@ type User struct {
 }
 
 type UserData struct {
+	UserName       string `json:"userID"`
+	Emoji          string `json:"emoji"`
 	AvatarThumb    string `json:"avatarThumb"`
 	FollowerCount  uint   `json:"followerCount"`
 	FollowingCount uint   `json:"followingCount"`
@@ -36,14 +38,19 @@ type Users struct {
 func (u *User) getUserInfo() *UserData {
 
 	var data UserData
-	tries := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	tries := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}
 
 	for _, v := range tries {
-		time.Sleep(2 * time.Second)
+		time.Sleep(1 * time.Second)
 		request, err := http.NewRequest("GET", baseURL, nil)
 		if err != nil {
 			log.Printf("REQUEST INIT ERROR: %v", err)
 		}
+
+		request.Close = true
+
+		//random := browser.Chrome()
+		//fmt.Println(random)
 
 		request.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36")
 
@@ -67,6 +74,7 @@ func (u *User) getUserInfo() *UserData {
 
 		if data.Status == "error" {
 			log.Printf("%s data fetch FAILED on try %v", u.Name, v)
+			data.AvatarThumb = "img"
 			continue
 		}
 
@@ -77,6 +85,8 @@ func (u *User) getUserInfo() *UserData {
 
 	}
 
+	data.UserName = u.UniqueID
+	data.Emoji = u.Name
 	u.Data = &data
 	return &data
 
