@@ -1,6 +1,5 @@
 {
 	
-	
     "blocks": [
 		
 		{
@@ -20,7 +19,7 @@
     		},
             "text": {
                 "type": "mrkdwn",
-                "text": ":busts_in_silhouette: *34799*\n:heart: *675392*\n:video_camera: *619*"
+                "text": ":busts_in_silhouette: *34799*\n:heart: *675394*\n:video_camera: *619*"
 
             } 
     	} 
@@ -47,7 +46,7 @@
     		},
             "text": {
                 "type": "mrkdwn",
-                "text": ":busts_in_silhouette: *33240*\n:heart: *970654*\n:video_camera: *1959*"
+                "text": ":busts_in_silhouette: *33240*\n:heart: *970660*\n:video_camera: *1960*"
 
             } 
     	} 
@@ -74,7 +73,7 @@
     		},
             "text": {
                 "type": "mrkdwn",
-                "text": ":busts_in_silhouette: *13289*\n:heart: *272184*\n:video_camera: *480*"
+                "text": ":busts_in_silhouette: *13289*\n:heart: *272188*\n:video_camera: *480*"
 
             } 
     	} 
@@ -182,7 +181,7 @@
     		},
             "text": {
                 "type": "mrkdwn",
-                "text": ":busts_in_silhouette: *17427*\n:heart: *491844*\n:video_camera: *830*"
+                "text": ":busts_in_silhouette: *17427*\n:heart: *491846*\n:video_camera: *830*"
 
             } 
     	} 
@@ -209,7 +208,7 @@
     		},
             "text": {
                 "type": "mrkdwn",
-                "text": ":busts_in_silhouette: *18632*\n:heart: *92900*\n:video_camera: *291*"
+                "text": ":busts_in_silhouette: *18633*\n:heart: *92902*\n:video_camera: *291*"
 
             } 
     	} 
@@ -290,7 +289,7 @@
     		},
             "text": {
                 "type": "mrkdwn",
-                "text": ":busts_in_silhouette: *17877*\n:heart: *162154*\n:video_camera: *104*"
+                "text": ":busts_in_silhouette: *17878*\n:heart: *162155*\n:video_camera: *104*"
 
             } 
     	} 
@@ -366,12 +365,12 @@
     		"type": "section",
     		"accessory": {
     			"type": "image",
-    			"image_url": "https://p16-amd-va.tiktokcdn.com/tos-maliva-avt-0068/580cf2adc30f223ffdaa9464a1078c12~c5_100x100.webp",
+    			"image_url": "img",
     			"alt_text": "img"
     		},
             "text": {
                 "type": "mrkdwn",
-                "text": ":busts_in_silhouette: *1145*\n:heart: *5918*\n:video_camera: *62*"
+                "text": ":busts_in_silhouette: *0*\n:heart: *0*\n:video_camera: *0*"
 
             } 
     	} 
